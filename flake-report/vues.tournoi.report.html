@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>flake8 violations: vues/tournoi.py</title>
+      <meta http-equiv="Content-Type" value="text/html; charset=UTF-8">
+      <link rel="stylesheet" href="styles.css">
+<script>
+function bindHandler(link) {
+   var code = link.getAttribute('data-code');
+   var key = location.pathname + '#' + code;
+
+   var ul = link.parentNode.querySelector('.details');
+   if (sessionStorage[key] != 'open') {
+      ul.style.display = 'none';
+   }
+   link.addEventListener('click', function (event) {
+      if (!ul.style.display || ul.style.display == 'none') {
+         ul.style.display = 'block';
+         sessionStorage[key] = 'open';
+      } else {
+         ul.style.display = 'none';
+         sessionStorage[key] = 'closed';
+      }
+   });
+}
+
+window.addEventListener('DOMContentLoaded', function () {
+   var links = document.querySelectorAll('#index > li > a');
+   for (var i = 0; i < links.length; i++) {
+      bindHandler(links[i]);
+   }
+});
+</script>
+   </head>
+   <body>
+      <div id="masthead" class="sev-2"></div>
+      <div id="page">
+         <p id="srclink">
+            <a title="View full annotated source"
+               href="vues.tournoi.source.html">
+               <img src="file.svg" alt="&#x2261;">
+            </a></p>
+         <h1>
+            <a href="index.html">
+               <img src="back.svg" alt="&#x2B05;">
+               vues/tournoi.py
+            </a>
+         </h1>
+
+         <ul id="index">
+         
+         <li>
+            <a data-code="E231">
+               <span class="count sev-2">
+                  10
+               </span>
+               <strong>E231:</strong> missing whitespace after ','
+               
+                  (and 1 similar)
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <p>Missing whitespace after ',':</p>
+               
+               <a href="vues.tournoi.source.html#l24">
+                  <tt><i>24</i>                 <span class="nb">print</span><span class="p">(</span><span class="n">index_joueur</span><span class="p">,</span> <span class="s2">&quot; : &quot;</span> <span class="p">,</span><span class="n">nom_joueur</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ':':</p>
+               
+               <a href="vues.tournoi.source.html#l29">
+                  <tt><i>29</i>             <span class="s2">&quot;index_tournoi&quot;</span><span class="p">:</span><span class="n">index_tournoi</span><span class="p">,</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ':':</p>
+               
+               <a href="vues.tournoi.source.html#l30">
+                  <tt><i>30</i>             <span class="s2">&quot;nom_tournoi&quot;</span><span class="p">:</span><span class="n">nom_tournoi</span><span class="p">,</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ':':</p>
+               
+               <a href="vues.tournoi.source.html#l31">
+                  <tt><i>31</i>             <span class="s2">&quot;lieu_tournoi&quot;</span><span class="p">:</span><span class="n">lieu_tournoi</span><span class="p">,</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ':':</p>
+               
+               <a href="vues.tournoi.source.html#l32">
+                  <tt><i>32</i>             <span class="s2">&quot;nombre_tours&quot;</span><span class="p">:</span><span class="n">nombre_tours</span><span class="p">,</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ':':</p>
+               
+               <a href="vues.tournoi.source.html#l33">
+                  <tt><i>33</i>             <span class="s2">&quot;tournee&quot;</span><span class="p">:</span><span class="n">tournee</span><span class="p">,</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ':':</p>
+               
+               <a href="vues.tournoi.source.html#l34">
+                  <tt><i>34</i>             <span class="s2">&quot;joueurs_tournoi&quot;</span><span class="p">:</span><span class="n">joueurs_tournoi</span><span class="p">,</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ':':</p>
+               
+               <a href="vues.tournoi.source.html#l35">
+                  <tt><i>35</i>             <span class="s2">&quot;index_joueurs&quot;</span><span class="p">:</span><span class="n">liste_index_joueurs</span><span class="p">,</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ':':</p>
+               
+               <a href="vues.tournoi.source.html#l36">
+                  <tt><i>36</i>             <span class="s2">&quot;controle_temps&quot;</span><span class="p">:</span><span class="n">controle_temps</span><span class="p">,</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ':':</p>
+               
+               <a href="vues.tournoi.source.html#l37">
+                  <tt><i>37</i>             <span class="s2">&quot;description&quot;</span><span class="p">:</span><span class="n">description</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E261">
+               <span class="count sev-2">
+                  3
+               </span>
+               <strong>E261:</strong> at least two spaces before inline comment
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="vues.tournoi.source.html#l14">
+                  <tt><i>14</i>         <span class="n">nombre_tours</span> <span class="o">=</span> <span class="mi">4</span> <span class="c1"># Regler par défaut à 4</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="vues.tournoi.source.html#l15">
+                  <tt><i>15</i>         <span class="n">tournee</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Tournées: &quot;</span><span class="p">)</span> <span class="c1"># nombre de tours int</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="vues.tournoi.source.html#l16">
+                  <tt><i>16</i>         <span class="n">joueurs_tournoi</span> <span class="o">=</span> <span class="mi">8</span> <span class="c1"># Taille de la liste de joueurs</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="W293">
+               <span class="count sev-2">
+                  3
+               </span>
+               <strong>W293:</strong> blank line contains whitespace
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="vues.tournoi.source.html#l2">
+                  <tt><i>2</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="vues.tournoi.source.html#l5">
+                  <tt><i>5</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="vues.tournoi.source.html#l27">
+                  <tt><i>27</i>         </tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E203">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>E203:</strong> whitespace before ','
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="vues.tournoi.source.html#l24">
+                  <tt><i>24</i>                 <span class="nb">print</span><span class="p">(</span><span class="n">index_joueur</span><span class="p">,</span> <span class="s2">&quot; : &quot;</span> <span class="p">,</span><span class="n">nom_joueur</span><span class="p">)</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E265">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>E265:</strong> block comment should start with '# '
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="vues.tournoi.source.html#l7">
+                  <tt><i>7</i>         <span class="c1">#Joueur 1</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E501">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>E501:</strong> line too long (90 > 79 characters)
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="vues.tournoi.source.html#l25">
+                  <tt><i>25</i>             <span class="n">choix_joueur</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Choisissez l&#39;index du joueur pour l&#39;ajouter au tournoi&quot;</span><span class="p">)</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         </ul>
+      </div>
+   </body>
+</html>
