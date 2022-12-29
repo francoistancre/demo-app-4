@@ -1,22 +1,21 @@
-
-from .joueur import JoueurControleur #quand c'est dans le meme dossier
+from .joueur import JoueurControleur  # quand c'est dans le meme dossier
 from .tournoi import TournoiControleur
 from .tour import TourControleur
 from vues.base import Vue
 
-class Controleur:
 
+class Controleur:
     def __init__(self):
         self.new_joueur = JoueurControleur()
         self.new_tournoi = TournoiControleur()
         self.new_tour = TourControleur()
-        #self.continue_tournoi = 
+        # self.continue_tournoi =
         self.new_vue = Vue()
-  
+
     def run(self):
-        
-        #menu pour rentrer dans le programme
-        choix = self.new_vue.menu_principale()  
+
+        # menu pour rentrer dans le programme
+        choix = self.new_vue.menu_principale()
         print(choix)
         if choix == 1:
             self.new_tournoi.create_tournoi()
@@ -48,7 +47,7 @@ class Controleur:
         elif choix == 3:
             self.new_tournoi.rapport_joueurs_tournoi("alphabetique")
         elif choix == 4:
-            self.new_tournoi.rapport_joueurs_tournoi("classement")    
+            self.new_tournoi.rapport_joueurs_tournoi("classement")
         elif choix == 5:
             self.new_tournoi.rapport_liste_tournoi()
         elif choix == 6:

@@ -1,10 +1,22 @@
-#from tinydb import TinyDB, Query, where
+# from tinydb import TinyDB, Query, where
 from tinydb import TinyDB
+
 
 class Tournoi:
     # Implementer un constructeur
     # On crée toujours les variables d'instance dans le constructeur
-    def __init__(self, index, nom, lieu, nombre_de_tours, tournee, joueurs_tournoi, index_joueurs, controle_temps, description):
+    def __init__(
+        self,
+        index,
+        nom,
+        lieu,
+        nombre_de_tours,
+        tournee,
+        joueurs_tournoi,
+        index_joueurs,
+        controle_temps,
+        description,
+    ):
         self.index = index
         self.nom = nom
         self.lieu = lieu
@@ -13,10 +25,9 @@ class Tournoi:
         self.joueurs_tournoi = joueurs_tournoi
         self.index_joueurs = index_joueurs
         self.controle_temps = controle_temps
-        self.description = description    
-        
+        self.description = description
 
-    def Presenter_Tournoi(self):
+    def presenter_tournoi(self):
         print("***** NOUVEAU TOURNOI *****")
         print("Index : ", self.index)
         print("Nom : ", self.nom)
@@ -27,16 +38,16 @@ class Tournoi:
         print("Contrôle du temps : ", self.controle_temps)
         print("Description : ", self.description)
         print("***************************")
-    
+
     def serialized(self):
         serialized_tournoi = vars(self)
-        #print(serialized_tournoi)
+        # print(serialized_tournoi)
         return serialized_tournoi
 
     def save_tournoi(self):
         tournoi = self.serialized()
         print("Le tournoi a été sauvegardé")
-                    
-        db = TinyDB('mydb.json')
-        tournoi_table = db.table('tournoi')
+
+        db = TinyDB("mydb.json")
+        tournoi_table = db.table("tournoi")
         tournoi_table.insert(tournoi)

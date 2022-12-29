@@ -1,5 +1,4 @@
 class RapportVue:
-    
     def __init__(self):
         pass
 
@@ -7,7 +6,7 @@ class RapportVue:
         print("*********************************************************")
         print(nom_rapport)
         print("*********************************************************")
-        #print(liste_joueurs)
+        # print(liste_joueurs)
         for dictionary in liste:
 
             print(dictionary)
